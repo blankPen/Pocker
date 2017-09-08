@@ -8,8 +8,8 @@ const path = require('path');
 const moment = require('moment');
 const { argv } = require('optimist');
 
-const postPath = path.resolve(process.cwd(), 'post');
-const sidePath = path.resolve(process.cwd(), 'post/_sidebar.md');
+const postPath = path.resolve(process.cwd(), 'docs');
+const sidePath = path.resolve(process.cwd(), 'docs/sidebar.md');
 let sbContent = fs.readFileSync(sidePath).toString('utf8');
 let postList = sbContent.split('\n').map(str => {
   var n = str.match(/\[.+\]/)[0];

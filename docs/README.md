@@ -7,6 +7,6 @@
 ``` bash
   npm start 
 ```
-预览地址：[http://localhost:3001/post/](http://localhost:3001/post/)
+预览地址：[http://localhost:3001/docs/](http://localhost:3001/docs/)
 
-编辑地址：[http://localhost:3001/post/edit.html](http://localhost:3001/post/edit.html)
+编辑地址：[http://localhost:3001/docs/edit.html](http://localhost:3001/docs/edit.html)
