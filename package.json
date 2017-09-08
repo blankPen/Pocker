@@ -1,0 +1,30 @@
+{
+  "name": "pocker",
+  "version": "1.0.0",
+  "description": "A document library",
+  "scripts": {
+    "start": "node ./script/server.js -p 3001",
+    "add": "docsify init",
+    "cp": "node ./script/post.js --type create",
+    "rp": "node ./script/post.js --type delete"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "chalk": "^2.1.0",
+    "connect": "^3.6.3",
+    "connect-livereload": "^0.6.0",
+    "express": "^4.15.4",
+    "livereload": "^0.6.2",
+    "moment": "^2.18.1",
+    "open": "0.0.5",
+    "optimist": "^0.6.1",
+    "serve-index": "^1.9.0",
+    "serve-static": "^1.12.4"
+  },
+  "dependencies": {
+    "color": "^2.0.0",
+    "docsify-cli": "^4.1.10"
+  }
+}
