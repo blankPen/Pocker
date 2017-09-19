@@ -9,6 +9,7 @@ exports.validateMessage = function validateMessage(raw) {
   var messageWithBody = (raw || '').split('\n').filter(function (str) {
     return str.indexOf('#') !== 0;
   }).join('\n');
+  logError(messageWithBody);
   var message = messageWithBody.split('\n').shift();
   log(message);
 };
