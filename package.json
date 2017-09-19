@@ -15,14 +15,17 @@
     "chalk": "^2.1.0",
     "connect": "^3.6.3",
     "connect-livereload": "^0.6.0",
+    "conventional-commit-types": "^2.2.0",
     "express": "^4.15.4",
     "ghooks": "^2.0.0",
     "livereload": "^0.6.2",
     "moment": "^2.18.1",
     "open": "0.0.5",
     "optimist": "^0.6.1",
+    "semver-regex": "^1.0.0",
     "serve-index": "^1.9.0",
-    "serve-static": "^1.12.4"
+    "serve-static": "^1.12.4",
+    "validate-commit-msg": "^2.14.0"
   },
   "dependencies": {
     "color": "^2.0.0",
@@ -30,8 +33,7 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "node ./script/pre-commit.js",
-      "commit-msg": "node script/validate-commit-msg.js"
+      "pre-commit": "node ./script/pre-commit.js"
     }
   }
 }
