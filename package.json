@@ -30,7 +30,8 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "node ./script/pre-commit.js"
+      "pre-commit": "node ./script/pre-commit.js",
+      "commit-msg": "node script/pre-commit.js"
     }
   }
 }
