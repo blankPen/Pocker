@@ -150,11 +150,9 @@ if (process.argv.join('').indexOf('mocha') === -1) {
     var msg = getCommitMessage(buffer);
     if (!validateMessage(msg)) {
       fs.appendFile(incorrectLogFile, msg + '\n', function () {
-        console.log('error')
         process.exit(1);
       });
     } else {
-      console.log('success')
       process.exit(0);
     }
 

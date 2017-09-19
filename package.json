@@ -6,7 +6,8 @@
     "start": "node ./script/server.js -p 3001",
     "add": "docsify init",
     "cp": "node ./script/post.js --type create",
-    "rp": "node ./script/post.js --type delete"
+    "rp": "node ./script/post.js --type delete",
+    "doc": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "chalk": "^2.1.0",
     "connect": "^3.6.3",
     "connect-livereload": "^0.6.0",
+    "conventional-changelog-cli": "^1.3.3",
     "conventional-commit-types": "^2.2.0",
     "express": "^4.15.4",
     "ghooks": "^2.0.0",
