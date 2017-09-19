@@ -16,6 +16,7 @@
     "connect": "^3.6.3",
     "connect-livereload": "^0.6.0",
     "express": "^4.15.4",
+    "ghooks": "^2.0.0",
     "livereload": "^0.6.2",
     "moment": "^2.18.1",
     "open": "0.0.5",
@@ -26,5 +27,10 @@
   "dependencies": {
     "color": "^2.0.0",
     "docsify-cli": "^4.1.10"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "node ./script/pre-commit.js"
+    }
   }
 }
